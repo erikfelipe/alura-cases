@@ -1,8 +1,9 @@
-import { createGlobalStyle } from "styled-components";
-import theme from "./theme";
+import { theme } from "..";
 
-export default createGlobalStyle`
- * {
+const GlobalStyle = () => {
+  return (
+    <style global jsx>{`
+      * {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
@@ -60,4 +61,8 @@ export default createGlobalStyle`
         justify-content: flex-start;
         align-items: stretch;
       }
-  `;
+    `}</style>
+  );
+};
+
+export default GlobalStyle;

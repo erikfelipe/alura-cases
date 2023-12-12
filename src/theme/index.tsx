@@ -76,7 +76,7 @@ const space = {
   x96: "384px", // 24rem
 };
 
-const theme = {
+export const theme = {
   breakpoints: {
     "Breakpoints.xs": 0,
     "Breakpoints.sm": 480,
@@ -223,5 +223,3 @@ const theme = {
   },
   space,
 };
-
-export default theme;
